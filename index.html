@@ -4,34 +4,303 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./styles/normalize.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
       <link rel="stylesheet" href="./styles/styles.css" />
-      <title>Document</title>
+      <title>.</title>
+      <script type="module" src="./scripts/script.js"></script>
+      <script
+         src="https://kit.fontawesome.com/ca65bea77e.js"
+         crossorigin="anonymous"
+      ></script>
+
+      <!--<link rel="stylesheet" href="./styles/styles.css" />-->
    </head>
    <body>
-      <div class="main">
-         <aside class="main__aside-nav">
-            <section class="aside-nav__pefil-photo">
-               <figure class="pefil-photo__figure">
+      <header class="header">
+         <ul class="header__list">
+            <a href="#" class="header__link">
+               <li class="header__list-item active">About</li>
+            </a>
+            <a href="#" class="header__link">
+               <li class="header__list-item">Summary</li>
+            </a>
+         </ul>
+      </header>
+      <main class="main">
+         <article class="curriculum about">
+            <section class="about__header">
+               <figure class="about__header-figure">
                   <img
-                     src="./assets/profile-photo.jpg"
-                     alt="personal photo"
-                     class="pefil-photo__img"
+                     class="about__header-img portrait"
+                     alt=""
+                     src="images/portrait.jpg"
                   />
-                  <span class="pefil-photo__caption"> Manuel A. Martinez </span>
                </figure>
+               <h2 class="about__header-title">
+                  Manuel Alejandro Martinez Perez
+               </h2>
+               <h4 class="about__header-subtilte">
+                  Web Developer Full Stack - Bilingue
+               </h4>
+               <h5 class="about__header-skills">
+                  HTML, CSS, Javascript, Python
+               </h5>
             </section>
-            <section class="aside-nav__about">
-               <a href="#"
-                  ><h3>About me</h3>
-                  <span>Who I Am?</span></a
-               >
+            <section class="about__intro">
+               <h4 class="about__intro-title">About Me</h4>
+               <p class="about__intro-text">
+                  Hello, my name is Manuel A. Martinez Perez.
+                  <br />
+                  <br />
+                  Having worked as a customer service representative for several
+                  years as well as a computer support technician, I am currently
+                  seeking a change of career path. I have studied web
+                  development for three years at this point, learning the latest
+                  technologies available on the market and practice a lot every
+                  day to be able to write clean, concise code.
+               </p>
             </section>
-            <section class="aside-nav__resume"></section>
-            <section class="aside-nav__contact info"></section>
-         </aside>
-         <main class="main__main-content"></main>
-         <aside class="main__media-information"></aside>
-      </div>
+            <section class="about__skills">
+               <div class="skills__languages">
+                  <h6 class="skills__languages-title">Languages</h6>
+                  <div class="skills__skill-progress">
+                     <span class="skills__progress-bar-title">Spanish</span>
+                     <div class="skill__progress-bar">
+                        <div class="skill__progress-bar--fill">100</div>
+                     </div>
+                  </div>
+                  <div class="skills__skill-progress">
+                     <span class="skills__progress-bar-title">English</span>
+                     <div class="skill__progress-bar">
+                        <div class="skill__progress-bar--fill">80</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="about__skills-code">
+                  <h6 class="skills__code-title">Code skills</h6>
+                  <div class="skills__skill-progress">
+                     <span class="skills__progress-bar-title">HTML5</span>
+                     <div class="skill__progress-bar">
+                        <div class="skill__progress-bar--fill">80</div>
+                     </div>
+                  </div>
+                  <div class="skills__skill-progress">
+                     <span class="skills__progress-bar-title">CSS3</span>
+                     <div class="skill__progress-bar">
+                        <div class="skill__progress-bar--fill">60</div>
+                     </div>
+                  </div>
+                  <div class="skills__skill-progress">
+                     <span class="skills__progress-bar-title">Javascript</span>
+                     <div class="skill__progress-bar">
+                        <div class="skill__progress-bar--fill">60</div>
+                     </div>
+                  </div>
+                  <div class="skills__skill-progress">
+                     <span class="skills__progress-bar-title">Python</span>
+                     <div class="skill__progress-bar">
+                        <div class="skill__progress-bar--fill">60</div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </article>
+
+         <article class="curriculum profile">
+            <section class="profile__section">
+               <h2 class="profile__section-title">Experience</h2>
+               <section class="profile__section-record">
+                  <h4 class="section-record__title">Help Desk Technician</h4>
+                  <h5 class="section-record__subtitle corp-name">Softtek</h5>
+                  <small class="section-record__detail">Full-time</small>
+                  <small class="section-record__detail"
+                     >May 2021 - Present</small
+                  >
+                  <small class="section-record__detail">
+                     Medellín, Antioquia, Colombia
+                  </small>
+                  <p class="section-record__text">
+                     As the responsible party for facilite to create
+                     relationship between the end clients and the theaters, it
+                     is my duty to resolve and prevent any technical issues that
+                     might negatively impact their performance in front of the
+                     end clients
+                  </p>
+                  <p class="section-record__subtitle">Activities:</p>
+                  <ul class="section-record__list">
+                     <li class="section-record__item">
+                        Connect the pin pads to their corresponding point of
+                        sale devices so that clients can pay for their purchases
+                        using their credit or debit cards.
+                     </li>
+                     <li class="section-record__item">
+                        Identify the various kinds of problems that could cause
+                        a machine not to be able to connect to the internet.
+                     </li>
+                     <li class="section-record__item">
+                        Provide technical support for automatic kiosks that may
+                        have any type of issue resulting in clients not being
+                        able to purchase their entrance or consumables
+                     </li>
+                     <li class="section-record__item">
+                        My duty is also to make routine checks, discard any
+                        generic issues, and escalate to L2 if I am unable to
+                        solve the problem on L1.
+                     </li>
+                  </ul>
+                  <p class="section-record__text">
+                     As a result of my methodology of optimizing my job, I have
+                     created scripts that automate the read and write of the
+                     system configuration. This has allowed me to improve the
+                     efficiency of my work
+                  </p>
+                  <small class="section-record__detail">
+                     Skills: Help Desk Support · English · Windows Server ·
+                     Troubleshooting
+                  </small>
+               </section>
+               <section class="profile__section-record">
+                  <h4 class="section-record__title">
+                     Technical Support Help Desk - Dispatcher
+                  </h4>
+                  <h5 class="section-record__subtitle corp-name">IBM</h5>
+                  <small class="section-record__detail">Full-time</small>
+                  <small class="section-record__detail"
+                     >Nov 2019 - May 2021</small
+                  >
+                  <small class="section-record__detail">
+                     Medellín, Antioquia, Colombia
+                  </small>
+                  <p class="section-record__text">
+                     As it was my first bilingual job, and the first time I had
+                     to find the cause of a problem in order to properly assign
+                     a case to the correct technician, this job was my first
+                     introduction to a new expertise area.
+                  </p>
+                  <p class="section-record__subtitle">Activities:</p>
+                  <ul class="section-record__list">
+                     <li class="section-record__item">
+                        I receive issue ticket requests through the mail,
+                        through the platform, or by telephone.
+                     </li>
+                     <li class="section-record__item">
+                        Seek out a technician who can assist on site and solve
+                        the problem based on what kind of server and part were
+                        having the problem.
+                     </li>
+                     <li class="section-record__item">
+                        Provide information about the technician that could have
+                        been requested.
+                     </li>
+                     <li class="section-record__item">
+                        Manage, update, and cancel technician appointments
+                     </li>
+                  </ul>
+                  <small class="section-record__detail">
+                     Skills: Customer Service · Teamwork · Microsoft Word
+                  </small>
+               </section>
+               <section class="profile__section-record">
+                  <h4 class="section-record__title">Call Center Agent</h4>
+                  <h5 class="section-record__subtitle corp-name">
+                     Allus Global BPO Center - (Nearshore Call Centers)
+                  </h5>
+                  <small class="section-record__detail">Full-time</small>
+                  <small class="section-record__detail"
+                     >Mar 2014 - Aug 2015</small
+                  >
+                  <small class="section-record__detail">
+                     Medellín, Antioquia, Colombia
+                  </small>
+                  <p class="section-record__text">This was my very first job</p>
+                  <p class="section-record__subtitle">Activities:</p>
+                  <ul class="section-record__list">
+                     <li class="section-record__item">
+                        Answer the clients' calls .
+                     </li>
+                     <li class="section-record__item">
+                        Provides clients with explanations of their bills,
+                        applying the appropriate modifications to the amount, if
+                        applicable
+                     </li>
+                     <li class="section-record__item">
+                        Offer and explain to them the benefits they would
+                        receive if they agreed the new products
+                     </li>
+                  </ul>
+                  <small class="experience__job-detail">
+                     Skills: Contact Centers · Customer Service
+                  </small>
+               </section>
+            </section>
+            <section class="profile__section">
+               <h2 class="profile__section-title">Education</h2>
+               <section class="profile__section-record">
+                  <h3 class="section-record__title">Back End development</h3>
+                  <h5 class="section-record__subtitle corp-name">
+                     Academia Geek
+                  </h5>
+                  <small class="section-record__detail">2019 - 2020</small>
+                  <small class="section-record__detail">8 hours daily</small>
+                  <small class="section-record__detail">
+                     Medellín, Antioquia, Colombia
+                  </small>
+
+                  <p class="section-record__text">
+                     During my time in academia, I learned and understood some
+                     concepts about developing backends, using JavaScript and
+                     Node.js to create all the database connections, develop and
+                     consume it in the practice environment
+                  </p>
+                  <p class="section-record__subtitle">Activities:</p>
+                  <ul class="section-record__list">
+                     <li class="section-record__item">Design Patterns</li>
+                     <li class="section-record__item">Javascript</li>
+                     <li class="section-record__item">
+                        Use MongoDB for non- relational databases and MySQL for
+                        relational databases
+                     </li>
+                     <li class="section-record__item">
+                        To make a CRUD for both types of databases
+                     </li>
+
+                     <li class="section-record__item">
+                        Sign up and Log in, encrypting passwords with Passport,
+                        bycriptjs and @hapi/joi.
+                     </li>
+                  </ul>
+               </section>
+            </section>
+         </article>
+      </main>
+      <footer class="footer">
+         <ul class="footer__list">
+            <a
+               href="https://www.linkedin.com/in/alastar-blacksnow/"
+               class="footer__link"
+            >
+               <li class="fa-brands fa-linkedin footer__item"></li>
+            </a>
+            <a href="https://github.com/KuraiPiero" class="footer__link">
+               <li class="fa-brands fa-square-github footer__item"></li>
+            </a>
+            <a href="https://wakatime.com/@yoricoshik" class="footer__link">
+               <li class="footer__item">
+                  <iconify-icon
+                     class="footer__icon"
+                     icon="simple-icons:wakatime"
+                  ></iconify-icon>
+               </li>
+            </a>
+         </ul>
+      </footer>
    </body>
 </html>
