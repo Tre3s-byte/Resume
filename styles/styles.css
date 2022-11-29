@@ -195,14 +195,7 @@
       text-align: start;
       width: 100%;
    }
-   .skill__progress-bar--fill {
-      width: 100%;
-      height: 1em;
-      background-color: #ffc500;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-   }
+
    .curriculum_download {
       width: 8.5em;
       max-width: 9em;
