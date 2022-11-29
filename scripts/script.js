@@ -5,9 +5,6 @@ const slide = Array.from(document.querySelectorAll('.header__list-item--slide'))
 const headerButtons = Array.from(
    document.querySelectorAll('.header__list-item')
 )
-const progressBarFill = Array.from(
-   document.querySelectorAll('.skill__progress-bar--fill')
-)
 
 const buttonSelection = headerButtons.forEach((button) => {
    button.addEventListener('click', function () {
@@ -30,7 +27,20 @@ const buttonSelection = headerButtons.forEach((button) => {
    })
 })
 
-progressBarFill.forEach((bar) => {
-   let width = bar.innerHTML
-   ;(bar.style.color = 'transparent'), (bar.style.width = `${width}%`)
-})
+function createBoxes() {
+   let tagTarget = Array.from(document.querySelectorAll('.skill__progress-bar'))
+
+   let percentanges = [100, 80, 80, 60, 60, 60]
+   tagTarget.forEach((tag, index) => {
+      tag.innerHTML = `<div class="skill__progress-bar--fill"></div>`
+      const progressBars = Array.from(
+         document.querySelectorAll('.skill__progress-bar--fill')
+      )
+      let progressBar = progressBars[index].style
+      let width = percentanges[index]
+      progressBar.width = `${width}%`
+      progressBar.height = '1em'
+      progressBar.backgroundColor = '#ffc500'
+   })
+}
+createBoxes()
