@@ -10,14 +10,16 @@
       <link
          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
          rel="stylesheet"
+         async
       />
       <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
       <link rel="stylesheet" href="./styles/styles.css" />
       <title>.</title>
-      <script type="module" src="./scripts/script.js"></script>
+      <script type="module" src="./scripts/script.js" async></script>
       <script
          src="https://kit.fontawesome.com/ca65bea77e.js"
          crossorigin="anonymous"
+         async
       ></script>
 
       <!--<link rel="stylesheet" href="./styles/styles.css" />-->
@@ -27,11 +29,9 @@
          <ul class="header__list">
             <a href="#" class="header__link">
                <li class="header__list-item active">About</li>
-               <div class="header__list-item--slide active"></div>
             </a>
             <a href="#" class="header__link">
                <li class="header__list-item">Summary</li>
-               <div class="header__list-item--slide"></div>
             </a>
          </ul>
       </header>
@@ -282,25 +282,32 @@
       </main>
       <footer class="footer">
          <div class="footer--slide"></div>
-         <ul class="footer__list">
+         <div class="footer__icons-box">
+            <a href="https://github.com/KuraiPiero" class="footer__link">
+               <img
+                  src="./images/github.svg"
+                  alt="github icon"
+                  class="footer__icon"
+               />
+            </a>
             <a
                href="https://www.linkedin.com/in/alastar-blacksnow/"
                class="footer__link"
             >
-               <li class="fa-brands fa-linkedin footer__item"></li>
-            </a>
-            <a href="https://github.com/KuraiPiero" class="footer__link">
-               <li class="fa-brands fa-square-github footer__item"></li>
+               <img
+                  src="./images/linkedin.svg"
+                  alt="linkendin icon"
+                  class="footer__icon"
+               />
             </a>
             <a href="https://wakatime.com/@yoricoshik" class="footer__link">
-               <li>
-                  <iconify-icon
-                     class="footer__item"
-                     icon="simple-icons:wakatime"
-                  ></iconify-icon>
-               </li>
+               <img
+                  src="./images/wakatime.svg"
+                  alt=" wakat"
+                  class="footer__icon"
+               />
             </a>
-         </ul>
+         </div>
       </footer>
    </body>
 </html>
