@@ -64,6 +64,33 @@ const cssTemplateString = [
    transform-origin: 100px 100px;
    transform: scale(1.2) translate(-10px, -70px);
 }`,
+   `.active:hover {
+   color: var(--tabaco);
+   transform: scale(1.02) translate(-2px, 0px);
+}`,
+   ` .active::before {
+   transition: opacity 0.3s, border 0.3s;
+}`,
+   `.active::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 200px;
+   height: 200px;
+   background-color: var(--golden-poppy);
+   border-color: transparent;
+   border-radius: 50%;
+   transform: translate(-10px, -70px) scale(0.1);
+   opacity: 0;
+   z-index: -1;
+   transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}`,
+   `.active:hover::after {
+   opacity: 1;
+   transform-origin: 100px 100px;
+   transform: scale(1.2) translate(-10px, -70px);
+}`,
 ]
 const styleTag = document.createElement('style')
 styleTag.innerHTML = cssTemplateString
